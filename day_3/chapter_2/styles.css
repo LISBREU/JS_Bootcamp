@@ -1,0 +1,123 @@
+/* Стили для всего тела */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #5ab7de, #4b99c3);
+    font-family: Arial, sans-serif;
+}
+
+/* Стили для контейнера формы */
+.login-container {
+    background-color: #fff;
+    padding: 30px 40px; /* Внутренние отступы для комфортного размещения элементов */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 360px; /* Ширина контейнера */
+    max-width: 100%; /* Ограничение максимальной ширины */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Для позиционирования дочерних элементов */
+}
+
+/* Новый контейнер для заголовка */
+.header-container {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: absolute; /* Абсолютное позиционирование внутри родителя */
+    top: 0; /* Прикрепляем к верхнему краю родителя */
+    left: 0; /* Прикрепляем к левому краю родителя */
+    right: 0; /* Прикрепляем к правому краю родителя */
+    width: 100%; /* Ширина равна ширине родителя */
+    box-sizing: border-box; /* Учитываем внутренние отступы в общей ширине */
+    margin-bottom: 40px; /* Отступ снизу от заголовка */
+    height: auto; /* Высота автоматически подстраивается под содержимое */
+}
+
+/* Стили для заголовка */
+.header-container h2 {
+    margin: 0;
+    color: #333;
+}
+
+/* Стили для элементов формы */
+form {/* Устанавливаем ширину формы на 100% от ширины родителя */
+    margin-top: 50px; /* Отступ сверху для создания расстояния между заголовком и формой */
+}
+
+form label.sr-only {
+    position: absolute;
+    left: -9999px;
+}
+
+form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Стили для нижней части формы */
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Стили для "Запомнить меня" */
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.remember-me input {
+    margin-right: 10px;
+}
+
+.remember-me label {
+    font-size: 12px;
+    white-space: nowrap;
+    margin-bottom: 16px;
+}
+
+/* Кнопка "Login" */
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Стили для текста "Забыли пароль" */
+.forgot-password {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.forgot-password a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
